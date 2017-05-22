@@ -1,25 +1,56 @@
-<!DOCTYPE html> 
-<html> lang="fr"</html>
-<head>...</head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>ClikDessus</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
 <body>
-  
-  <header class="header navbar navbar-default">...</header>
-  
-  <main class="bouton">
-    <div class="container-fluid">
-        ::before 
-        
-        <div class= col-md-6>...</div> == $0
-        
-        <div class="col-md-6">...</div>
-        ::after
-        </div>
-    
-  </main>
-  
-  <script src="./js/clicker.js" type="text/javascript" charset="utf-8" async defer>
-      
-  </script>
-  
-</body>
-</html>
+	<!-- header -->
+	<header class="header navbar navbar-default">
+		<div class="container">
+			<div class="navbar-text" id="score"></div>
+			<div class="navbar-text" id="multiplicateurCont"></div>
+			<div class="navbar-text" id="superMultiplicateurCont"></div>
+			<div class="navbar-text" id="autoclickerCont"></div>
+			<div class="navbar-text" id="message"></div>
+		</div>
+	</header>
+	<!-- /header -->
+	
+	<!-- main -->
+	<main class="bouton">
+		<div class="container-fluid">
+			<!-- Le bouton -->
+			<div class="col-md-6">
+				<button type="button" id="myBouton" class="btn btn-primary btn-lg"><p>Cick!</p><p class="glyphicon glyphicon-play"></p></button>
+			</div>
+			<!-- /Le bouton -->
+			<!-- Le magasin -->
+			<div class="col-md-6">
+				<!--Multiplicateur-->
+				<div class="row">
+					<div class="col-md-6">
+					<button type="button" class="btn btn-success" id="achatMultiplicateur">Multiplicateur</button></div>
+					<div class="col-md-6" id="prixDuMultiplicateur"></div>
+				</div>
+				<!--/Multiplicateur-->
+				<!--Super Multiplicateur-->
+				<div class="row">
+					<div class="col-md-6">
+					<button type="button" class="btn btn-success" id="achatSuperMultiplicateur">Super Multiplicateur</button></div>
+					<div class="col-md-6" id="prixDuSuperMultiplicateur"></div>
+				</div>
+				<!--/Super Multiplicateur-->
+				<!--Autoclicker-->
+				<div class="row">
+					<div class="col-md-6">
+					<button type="button" class="btn btn-success" id="achatAutoclicker">Autoclicker</button></div>
+					<div class="col-md-6" id="prixAutoclicker"></div>
+				</div>
+				<!--/Autoclicker-->
+			<!-- /Le magasin -->
+		</div>	
+	</main>
+	<!-- /main -->
